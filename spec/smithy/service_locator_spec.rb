@@ -30,6 +30,6 @@ describe Smithy::ServiceLocator do
   end
 
   it "makes the dependencies private" do
-    test_object.private_methods.should include(:foo)
+    test_object.private_methods.should include("foo")
   end
 end
